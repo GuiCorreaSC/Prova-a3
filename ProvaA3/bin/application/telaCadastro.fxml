@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane fx:id="ap" prefHeight="393.0" prefWidth="425.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.telaCadastroController">
+   <children>
+      <VBox layoutX="23.0" layoutY="18.0" prefHeight="363.0" prefWidth="317.0" spacing="5.0" AnchorPane.bottomAnchor="25.0" AnchorPane.leftAnchor="35.0" AnchorPane.rightAnchor="35.0" AnchorPane.topAnchor="25.0">
+         <children>
+            <Label text="Informe seu login" />
+            <TextField fx:id="txtLogin" />
+            <Label text="Informe a senha" />
+            <TextField fx:id="txtSenha" style="-fx-border-radius: 10;" />
+            <Label text="Informe a senha novamente" />
+            <TextField fx:id="txtSenhaConf" />
+            <Label text="Informe seu e-mail" />
+            <TextField fx:id="txtEmail" />
+            <Label text="Informe seu CPF" />
+            <VBox prefHeight="44.0" prefWidth="255.0">
+               <children>
+                  <HBox prefHeight="40.0" prefWidth="255.0">
+                     <children>
+                        <VBox prefHeight="42.0" prefWidth="336.0">
+                           <children>
+                              <TextField fx:id="txtCadastroRF" prefHeight="25.0" prefWidth="195.0" />
+                              <CheckBox fx:id="verifLoja" mnemonicParsing="false" text="Sou um fornecedor" />
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <Button fx:id="botaoCadastro" mnemonicParsing="false" onAction="#cadastraUser" stylesheets="@application.css" text="Cadastrar" />
+         </children>
+         <opaqueInsets>
+            <Insets bottom="5.0" />
+         </opaqueInsets>
+         <padding>
+            <Insets bottom="10.0" />
+         </padding>
+      </VBox>
+   </children>
+</AnchorPane>
